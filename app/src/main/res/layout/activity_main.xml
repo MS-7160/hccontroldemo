@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ccffff"
@@ -36,28 +37,20 @@
 
         <Button
             android:id="@+id/btn_connect"
+            style="@style/Widget.Hccontroldemo.SquareButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
-            android:backgroundTint="#ff9933"
-            android:padding="12dp"
-            android:text="Connect"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:text="Connect" />
 
         <Button
             android:id="@+id/btn_disconnect"
+            style="@style/Widget.Hccontroldemo.SquareButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#ff9933"
-            android:padding="12dp"
-            android:text="Disconnect"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:text="Disconnect" />
     </LinearLayout>
 
     <GridLayout
@@ -74,159 +67,111 @@
 
         <Button
             android:id="@+id/btn_box1_led_on"
+            style="@style/Widget.Hccontroldemo.SquareButton"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:backgroundTint="#ff9933"
-            android:padding="8dp"
-            android:text="Box1 LED ON"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:text="Box1 LED ON" />
 
         <Button
             android:id="@+id/btn_box2_led_on"
+            style="@style/Widget.Hccontroldemo.SquareButton"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:backgroundTint="#ff9933"
-            android:padding="8dp"
-            android:text="Box2 LED ON"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:text="Box2 LED ON" />
 
         <Button
             android:id="@+id/btn_box3_led_on"
+            style="@style/Widget.Hccontroldemo.SquareButton"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:backgroundTint="#ff9933"
-            android:padding="8dp"
-            android:text="Box3 LED ON"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:text="Box3 LED ON" />
 
         <Button
             android:id="@+id/btn_box1_led_off"
+            style="@style/Widget.Hccontroldemo.SquareButton"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:backgroundTint="#ff9933"
-            android:padding="8dp"
-            android:text="Box1 LED OFF"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:text="Box1 LED OFF" />
 
         <Button
             android:id="@+id/btn_box2_led_off"
+            style="@style/Widget.Hccontroldemo.SquareButton"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:backgroundTint="#ff9933"
-            android:padding="8dp"
-            android:text="Box2 LED OFF"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:text="Box2 LED OFF" />
 
         <Button
             android:id="@+id/btn_box3_led_off"
+            style="@style/Widget.Hccontroldemo.SquareButton"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:backgroundTint="#ff9933"
-            android:padding="8dp"
-            android:text="Box3 LED OFF"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:text="Box3 LED OFF" />
 
         <Button
             android:id="@+id/btn_box1_open"
+            style="@style/Widget.Hccontroldemo.SquareButton"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:backgroundTint="#ff9933"
-            android:padding="8dp"
-            android:text="Box1 OPEN"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:text="Box1 OPEN" />
 
         <Button
             android:id="@+id/btn_box2_open"
+            style="@style/Widget.Hccontroldemo.SquareButton"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:backgroundTint="#ff9933"
-            android:padding="8dp"
-            android:text="Box2 OPEN"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:text="Box2 OPEN" />
 
         <Button
             android:id="@+id/btn_box3_open"
+            style="@style/Widget.Hccontroldemo.SquareButton"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:backgroundTint="#ff9933"
-            android:padding="8dp"
-            android:text="Box3 OPEN"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:text="Box3 OPEN" />
 
         <Button
             android:id="@+id/btn_box1_close"
+            style="@style/Widget.Hccontroldemo.SquareButton"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:backgroundTint="#ff9933"
-            android:padding="8dp"
-            android:text="Box1 CLOSE"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:text="Box1 CLOSE" />
 
         <Button
             android:id="@+id/btn_box2_close"
+            style="@style/Widget.Hccontroldemo.SquareButton"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:backgroundTint="#ff9933"
-            android:padding="8dp"
-            android:text="Box2 CLOSE"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:text="Box2 CLOSE" />
 
         <Button
             android:id="@+id/btn_box3_close"
+            style="@style/Widget.Hccontroldemo.SquareButton"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:backgroundTint="#ff9933"
-            android:padding="8dp"
-            android:text="Box3 CLOSE"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            android:text="Box3 CLOSE" />
 
     </GridLayout>
 

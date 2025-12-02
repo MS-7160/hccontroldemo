@@ -6,6 +6,7 @@ import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothDevice
 import android.bluetooth.BluetoothSocket
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
@@ -18,6 +19,9 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
 import java.io.IOException
 import java.io.InputStream
 import java.io.OutputStream
@@ -67,7 +71,23 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
         setContentView(R.layout.activity_main)
+
+        val root = findViewById<View>(R.id.rootLayout)
+        val initialPadding = intArrayOf(root.paddingLeft, root.paddingTop, root.paddingRight, root.paddingBottom)
+        ViewCompat.setOnApplyWindowInsetsListener(root) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(
+                initialPadding[0] + systemBars.left,
+                initialPadding[1] + systemBars.top,
+                initialPadding[2] + systemBars.right,
+                initialPadding[3] + systemBars.bottom
+            )
+            insets
+        }
+        window.statusBarColor = Color.TRANSPARENT
+        WindowCompat.getInsetsController(window, root)?.isAppearanceLightStatusBars = true
 
         logView = findViewById(R.id.logView)
         logScroll = findViewById(R.id.logScroll)
