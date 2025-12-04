@@ -87,7 +87,11 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         window.statusBarColor = Color.TRANSPARENT
-        WindowCompat.getInsetsController(window, root)?.isAppearanceLightStatusBars = true
+        window.navigationBarColor = Color.BLACK
+        WindowCompat.getInsetsController(window, root)?.apply {
+            isAppearanceLightStatusBars = true
+            isAppearanceLightNavigationBars = false
+        }
 
         logView = findViewById(R.id.logView)
         logScroll = findViewById(R.id.logScroll)
