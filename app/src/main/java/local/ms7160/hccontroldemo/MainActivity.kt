@@ -4,9 +4,9 @@ import android.Manifest
 import android.annotation.SuppressLint
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothDevice
+import android.bluetooth.BluetoothManager
 import android.bluetooth.BluetoothSocket
 import android.content.pm.PackageManager
-import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
     private val handler = Handler(Looper.getMainLooper())
     private val executor: ExecutorService = Executors.newSingleThreadExecutor()
 
-    private val bluetoothAdapter: BluetoothAdapter? by lazy { BluetoothAdapter.getDefaultAdapter() }
+    private val bluetoothAdapter: BluetoothAdapter? by lazy { obtainBluetoothAdapter() }
     private var bluetoothSocket: BluetoothSocket? = null
     private var outputStream: OutputStream? = null
     private var inputStream: InputStream? = null
@@ -86,9 +86,7 @@ class MainActivity : AppCompatActivity() {
             )
             insets
         }
-        window.statusBarColor = Color.TRANSPARENT
-        window.navigationBarColor = Color.BLACK
-        WindowCompat.getInsetsController(window, root)?.apply {
+        WindowCompat.getInsetsController(window, root).apply {
             isAppearanceLightStatusBars = true
             isAppearanceLightNavigationBars = false
         }
@@ -243,7 +241,7 @@ class MainActivity : AppCompatActivity() {
                     if (incoming.isNotEmpty()) {
                         handler.post { appendLog("RX: $incoming") }
                     }
-                } catch (e: IOException) {
+                } catch (_: IOException) {
                     break
                 }
             }
@@ -298,6 +296,15 @@ class MainActivity : AppCompatActivity() {
         inputStream = null
         outputStream = null
         bluetoothSocket = null
+    }
+
+    private fun obtainBluetoothAdapter(): BluetoothAdapter? {
+        val manager = ContextCompat.getSystemService(this, BluetoothManager::class.java)
+        if (manager != null) {
+            return manager.adapter
+        }
+        @Suppress("DEPRECATION")
+        return BluetoothAdapter.getDefaultAdapter()
     }
 
     private fun hasBluetoothPermission(): Boolean {

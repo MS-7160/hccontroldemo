@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">hccontroldemo</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="box1_led_on">Box 1 LED ON</string>
+    <string name="box2_led_on">Box 2 LED ON</string>
+    <string name="box3_led_on">Box 3 LED ON</string>
+    <string name="box1_led_off">Box 1 LED OFF</string>
+    <string name="box2_led_off">Box 2 LED OFF</string>
+    <string name="box3_led_off">Box 3 LED OFF</string>
+    <string name="box1_open">Box 1 OPEN</string>
+    <string name="box2_open">Box 2 OPEN</string>
+    <string name="box3_open">Box 3 OPEN</string>
+    <string name="box1_close">Box 1 CLOSE</string>
+    <string name="box2_close">Box 2 CLOSE</string>
+    <string name="box3_close">Box 3 CLOSE</string>
 </resources>

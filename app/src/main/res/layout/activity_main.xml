@@ -4,7 +4,6 @@
     android:id="@+id/rootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ccffff"
     android:padding="16dp"
     tools:context=".MainActivity">
 
@@ -42,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
-            android:text="Connect" />
+            android:text="@string/connect" />
 
         <Button
             android:id="@+id/btn_disconnect"
@@ -50,7 +49,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Disconnect" />
+            android:text="@string/disconnect" />
     </LinearLayout>
 
     <GridLayout
@@ -72,7 +71,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:text="Box1 LED ON" />
+            android:text="@string/box1_led_on" />
 
         <Button
             android:id="@+id/btn_box2_led_on"
@@ -81,7 +80,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:text="Box2 LED ON" />
+            android:text="@string/box2_led_on" />
 
         <Button
             android:id="@+id/btn_box3_led_on"
@@ -90,7 +89,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:text="Box3 LED ON" />
+            android:text="@string/box3_led_on" />
 
         <Button
             android:id="@+id/btn_box1_led_off"
@@ -99,7 +98,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:text="Box1 LED OFF" />
+            android:text="@string/box1_led_off" />
 
         <Button
             android:id="@+id/btn_box2_led_off"
@@ -108,7 +107,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:text="Box2 LED OFF" />
+            android:text="@string/box2_led_off" />
 
         <Button
             android:id="@+id/btn_box3_led_off"
@@ -117,7 +116,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:text="Box3 LED OFF" />
+            android:text="@string/box3_led_off" />
 
         <Button
             android:id="@+id/btn_box1_open"
@@ -126,7 +125,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:text="Box1 OPEN" />
+            android:text="@string/box1_open" />
 
         <Button
             android:id="@+id/btn_box2_open"
@@ -135,7 +134,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:text="Box2 OPEN" />
+            android:text="@string/box2_open" />
 
         <Button
             android:id="@+id/btn_box3_open"
@@ -144,7 +143,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:text="Box3 OPEN" />
+            android:text="@string/box3_open" />
 
         <Button
             android:id="@+id/btn_box1_close"
@@ -153,7 +152,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:text="Box1 CLOSE" />
+            android:text="@string/box1_close" />
 
         <Button
             android:id="@+id/btn_box2_close"
@@ -162,7 +161,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:text="Box2 CLOSE" />
+            android:text="@string/box2_close" />
 
         <Button
             android:id="@+id/btn_box3_close"
@@ -171,7 +170,7 @@
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:text="Box3 CLOSE" />
+            android:text="@string/box3_close" />
 
     </GridLayout>
 

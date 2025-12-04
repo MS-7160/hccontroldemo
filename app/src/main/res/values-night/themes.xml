@@ -3,5 +3,8 @@
     <style name="Base.Theme.Hccontroldemo" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:statusBarColor">@color/status_bar_transparent</item>
+        <item name="android:navigationBarColor">@color/navigation_bar</item>
     </style>
 </resources>

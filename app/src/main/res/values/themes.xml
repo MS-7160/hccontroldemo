@@ -4,6 +4,9 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:buttonStyle">@style/Widget.Hccontroldemo.SquareButton</item>
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:statusBarColor">@color/status_bar_transparent</item>
+        <item name="android:navigationBarColor">@color/navigation_bar</item>
     </style>
 
     <style name="Widget.Hccontroldemo.SquareButton" parent="@style/Widget.AppCompat.Button">
